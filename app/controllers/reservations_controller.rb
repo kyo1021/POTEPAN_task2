@@ -1,5 +1,4 @@
 class ReservationsController < ApplicationController
-  before_action :login_required, only: %i[new create created posts]
 
   def new
     # レンダリング時に画面の描画に必要なインスタンス変数の設定

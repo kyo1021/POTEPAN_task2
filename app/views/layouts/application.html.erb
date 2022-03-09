@@ -34,7 +34,7 @@
             <% if current_user.image.file == nil %>
               <img src="/assets/default_icon.png" class="default_image">
             <% else %>
-              <img src="<%= current_user.image %>">
+              <img src="<%= current_user.image %>" class="default_image">
             <% end %>
         
             <nav class="menu-bar hidden">

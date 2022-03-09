@@ -5,7 +5,7 @@ before_action :room_search
 
 def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :image])
-    devise_parameter_sanitizer.permit(:account_update, keys: [:image, :profile])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:username, :image, :profile])
 end
 
   def room_search
